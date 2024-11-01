@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="./pic.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <nav>
+                <ul class="headcontainer">
+                    <li><a class="link" href="../../index.html">Home</a></li>
+                    <li><a class="link" href="../workout/workout.html">Workout</a></li>
+                    <li><a class="link" href="../nutrition/Nutrition.html">Nutrition</a></li>
+                    <li><a class="link" href="../gallery/photogallery.html">Gallery</a></li>
+                    <li><a class="link" href="../contact/contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="slider">
+            <div class="slides">
+                <div class="slide fade">
+                    <img src="../../IMAGE/daniel-apodaca-WdoQio6HPVA-unsplash.jpg" alt="Image 1">
+                </div>
+                <div class="slide fade">
+                    <img src="../../IMAGE/pexels-anush-1229356.jpg" alt="Image 2">
+                </div>
+                <div class="slide fade">
+                    <img src="../../IMAGE/vecteezy_man-holding-a-dumbbell-in-a-gym-with-row-of-dumbbells-in-the_2031342.jpg" alt="Image 3">
+                </div>
+            </div>
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+    </div>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function changeSlide(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            const slides = document.getElementsByClassName("slide");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+    </script>
+
+<footer>
+    <div class="footer-container">
+        <p>&copy; 2024 EclipsElite. All rights reserved.</p>
+        <p>Fueling your fitness journey every step of the way!</p>
+        <div class="footer-links">
+        </div>
+        <div class="social-media">
+            <a href="https://www.instagram.com/itx_saud_afridi/profilecard/?igsh=MWo2YzVpMnhmOWhkYg%3D%3D" target="_blank" aria-label="Instagram">Instagram</a>
+            <a href="https://www.linkedin.com/in/saud-afridi-041421280/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" aria-label="Linkedin">Linkedin</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

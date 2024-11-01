@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+    .navbar{
+        height: 12%;
+        display: flex;
+        align-items: center;
+    }
+    .logo{
+        width: 50px;
+        cursor: pointer;
+    
+    }
+    .menu-icon{
+        width: 30px;
+        cursor: pointer;
+        margin-left: 40px;
+    
+    }
+    nav{
+        flex: 1;
+        text-align: center;
+    }
+    nav ul li{
+        list-style-type: none;
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 120%;
+    }
+    ul li a{
+        color: rgb(10, 10, 10) ;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    ul button{
+        margin-left:100px;
+        padding:10px;
+        border-radius: 10%;
+        background:rgb(220, 116, 116);
+        color:rgb(3, 3, 3);
+        font-size: x-large;
+        font-weight: bold;
+    }
+    ul button:hover{
+        background:red;
+    }
+    nav ul li a:hover{
+        color:#ea1538;
+        transition: .3s;
+    }  
+    .text{
+        margin-left: 7%;
+        margin-top: 40;
+    
+    }
+    .text h1{
+        font-size: 100px;
+        margin-top: 10%;
+    
+    }
+    .text p{
+        font-size: 25px;
+        margin-top: 20px;
+    
+    }
+    .text button{
+        width: 170px;
+        height: 44px;
+        background-color: rgb(198, 51, 51);
+        color: white;
+        border: none;
+        margin-top: 50px;
+        font-size: 25px;
+    }
+    .row{
+        display: flex;
+        height: 88%;
+        align-items: center;
+    }
+    .col{
+        flex-basis: 50%;
+    
+    
+    }
+    h1{
+        color: #fff;
+        font-size: 100px;
+    
+    }
+    span{
+        color: #ea1538;
+    }
+.workout-image {
+    width: 100%; 
+    height: fix; 
+    border-radius: 5px; 
+    margin: 15px 0; 
+    display: block; 
+}
+
+.workout-plan {
+    padding: 20px; 
+    background-color: #fff; 
+    margin: 20px 0; 
+    border-radius: 5px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    border-top: 20px solid black;
+    position: static;
+    width: 100%;
+    bottom: 0;
+    clear: both;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.footer-links a, .social-media a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 0.9rem;
+}
+
+.footer-links a:hover, .social-media a:hover {
+    color: #ffa500;
+}
+
+.social-media a {
+    margin: 0 5px;
+    font-size: 1.1rem;
+}
+

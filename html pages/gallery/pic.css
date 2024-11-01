@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../IMAGE/pexels-anush-1229356.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    z-index: 10;
+}
+
+.navbar nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 130%;
+}
+ul li a {
+    color: rgb(249, 248, 248);
+    text-decoration: none;
+    font-weight: bold;
+}
+ul button {
+    margin-left: 100px;
+    padding: 10px;
+    border-radius: 10%;
+    background: rgb(220, 116, 116);
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+}
+ul button:hover {
+    background: red;
+}
+nav ul li a:hover {
+    color: #ea1538;
+    transition: .3s;
+}  
+
+/* Slider Styling */
+.slider {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    margin-top: 80px; /* Account for fixed navbar */
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    image-resolution: 1380p;
+}
+
+/* Controls */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    border-top: 20px solid black;
+    position: static;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.footer-links a, .social-media a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 0.9rem;
+}
+
+.footer-links a:hover, .social-media a:hover {
+    color: #ffa500;
+}
+
+.social-media a {
+    margin: 0 5px;
+    font-size: 1.1rem;
+}
